@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <script type="text/javascript" src="js/CARRITO.js" charset="utf-8"></script>
+    <title>TIENDA</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h2>PRODUCTOS DE MI TIENDA</h2>
+      <form>
+        <select name="mproductos" class="custom-select mb-3" id="producto">
+          <option selected>Selecciona tu productos favorito</option>
+          <option value="25">Fabuloso</option>
+          <option value="9">Chetos FlamingHot</option>
+          <option value="15">Jabon Corporal</option>
+          <option value="5">TupsiPop</option>
+          <option value="3">Sopas</option>
+          <option value="19">Jabon Polvo</option>
+          <option value="9">Matequilla</option>
+          <option value="38">CocaCola</option>
+        </select>  
+        <label for="cant">CANTIDAD:</label>
+        <input type="number" class="form-control" id="cantidad" placeholder="Ingresa la cantidad que deceas" name="cantidad">
+        <br>
+        <textarea rows="4" cols="50" name="carrito" form="usrform" id="texta">
+        </textarea>
+        <br>
+        <br>
+        <label for="totalCompra">Total:</label>
+        <input type="text" value="0" id="totalCompra" name="totalCompra" disabled>
+        <br>
+        <br>
+        <button type="button" class="btn btn-primary btn-lg" onclick="limpiar()">NUEVA COMPRA</button>
+
+        <button type="button" class="btn btn-primary btn-lg" onclick="insertar()">INSERTAR</button> 
+
+
+  </form>
+</div>
+
+</body>
+</html>
