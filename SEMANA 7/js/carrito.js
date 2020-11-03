@@ -20,7 +20,9 @@ function insertar(){
   else if (precio>0 & cantidad<=0 || precio<=0 & cantidad>0 ){
     alert("Lo siento no tengo ningun valor en tu cantidad")
   }
-  }
+}
+
+
 function limpiar(){
   $("#texta").empty();
   $("#totalCompra").val('0');
